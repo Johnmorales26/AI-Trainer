@@ -27,28 +27,28 @@ Una vez instalada nuestra herramienta Android Studio debemos crear un emulador p
 
 Una vez descargado nuestra aplicacion del repositorio nos arrojara un archivo *.zip* dicho archivo podemos descomprimirlo con la herramienta <a href="https://www.winrar.es/descargas">WinRAR</a>.
 
-<center>
+<p align="center">
 <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h02_18.png" width = "250" title = "Downloaded File">
-</center>
+</p>
 
 Una vez descomprimido el archivo podemos abrirlo con nuestro IDE *Android Studio*.
 Una vez abierto nuestro IDE seleccionaremos el boton de *Open* para poder navegar en nuestros documentos y así encontrar el archivo.
 
-<center>
+<p align="center">
 <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h06_07.png" width = "250" title = "Main screen of Android Studio IDE">
-</center>
+</p>
 
 Una vez encontrado el archivo en nuestra computadora daremos clic en *Ok* para así de esta manera abra el IDE con nuestro proyecto.
 
-<center>
+<p align="center">
 <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h08_29.png" width = "250" title = "Proyect Location">
-</center>
+</p>
 
 Una vez sincronizado nuestro proyecto debemos obtener esta pantalla:
 
-<center>
+<p align="center">
 <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h11_07.png" width = "250" title = "Final Proyect Load">
-</center>
+</p>
 
 
 ## Ejecutando las pruebas ⚙️
