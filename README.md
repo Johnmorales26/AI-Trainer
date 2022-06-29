@@ -92,13 +92,13 @@ Una vez cargado el dataset previsualizaremos los datos de esta manera:
 Ahora pasaremos a la pantalla de *Operations* en dicha pantalla añadiremos un *Umbral* con un valor de *0.001* el cual nos ayudara a darle mas precision al entrenamiento de nuestra neurona:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h39_38.png" width = "250" title = "Umbral Value">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h41_03.png" width = "250" title = "Umbral Value">
 </p>
 
 Una vez añadido el Umbral daremos clic en *Calculate* y esperaremos a que arroje los resultados como estos:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h41_03.png" width = "250" title = "Umbral Value">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h45_40.png" width = "250" title = "Umbral Value">
 </p>
 
 Una vez obtenidos los resultados podemos observar ciertos apartados que son los siguientes:
