@@ -7,13 +7,6 @@ La aplicación es capaz de leer estos conjuntos de datos y realizar los ajustes 
   <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/AITrainer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" width="350" title="Icon Aplication">
 </p>
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
 Antes de iniciar a probar la aplicacion, debe instalar las herramientas necesarias para poder utiñizar el proyecto de Android en nuestro dispositivo de computo.
@@ -35,74 +28,114 @@ Una vez descomprimido el archivo podemos abrirlo con nuestro IDE *Android Studio
 Una vez abierto nuestro IDE seleccionaremos el boton de *Open* para poder navegar en nuestros documentos y así encontrar el archivo.
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h06_07.png" width = "250" title = "Main screen of Android Studio IDE">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h06_07.png" width = "450" title = "Main screen of Android Studio IDE">
 </p>
 
 Una vez encontrado el archivo en nuestra computadora daremos clic en *Ok* para así de esta manera abra el IDE con nuestro proyecto.
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h08_29.png" width = "250" title = "Proyect Location">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h08_29.png" width = "450" title = "Proyect Location">
 </p>
 
 Una vez sincronizado nuestro proyecto debemos obtener esta pantalla:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h11_07.png" width = "250" title = "Final Proyect Load">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h11_07.png" width = "450" title = "Final Proyect Load">
 </p>
 
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+Para generar las pruebas de nuestra aplicación es necesario instalar unos dataset dentro de nuestro emulador los cuales se encuentran dentro de la misma aplicacion dentro de la carpeta <a href="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/tree/main/AITrainer/app/src/main/res/raw">Raw</a>
+Lo que haremos es pasar esos archivos a nuestro escritorio de la computadora y arrastrarlos el emulador.
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Passing dataset to emulator">
+</p>
+
+Para poder correr la aplicación presionaremos la combinación de teclas *Shift + F10* para compilar la aplicacion y instalarla ya sea en nuestro emulador o dispositivo fisico.
+Una vez acabada la compilacion nos mostrara una pantalla la siguiente pantalla:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Main screen to AI Trainer">
+</p>
+
+Daremos clic en la esquina superor izquierda para activar el menu desplegable y así poder previsualizar nuestras opciones que tenemos:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "AI Trainer Dropdown Menu">
+</p>
+
+Seleccionaremos la segunda opcion de *Automatic Regression* y nos mostrara la siguiente pantalla:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "AI Trainer Automatic Regression Pages">
+</p>
 
 ### Analice las pruebas end-to-end 🔩
 
-_Explica que verifican estas pruebas y por qué_
+Aquí generaremos nuestra primer prueba de entrenamiento de neurona con un dataset.
+#### Paso 1
+Cargaremos nuestro dataset dando clic en el boton de *Load Data* y procederemos a ubicarlo en nuestro dispositivo.
+Usaremos el dataset de *Datos Sinteticos*
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Load dataset Datos Sinteticos">
+</p>
+
+Una vez cargado el dataset previsualizaremos los datos de esta manera:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Data Previsualization">
+</p>
+
+Ahora pasaremos a la pantalla de *Operations* en dicha pantalla añadiremos un *Umbral* con un valor de *0.001* el cual nos ayudara a darle mas precision al entrenamiento de nuestra neurona:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Umbral Value">
+</p>
+
+Una vez añadido el Umbral daremos clic en *Calculate* y esperaremos a que arroje los resultados como estos:
+
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Umbral Value">
+</p>
+
+Una vez obtenidos los resultados podemos observar ciertos apartados que son los siguientes:
 
 ```
-Da un ejemplo
+Value W0: Este valor corresponde al valor en el que se ajusto la primer W para el entrenamiento de la neurona con este dataset.
+
+Value W1: Este valor corresponde al valor en el que se ajusto la segunda W para el entrenamiento de la neurona con este dataset.
+
+Value J: El valor de J corresponde al costo que vamos a ir obteniendo, mientras mas cerca a 0 mas precisa sera nuestra neurona.
+
+Value R: El valor de R corresponde a la forma en que vamos a medir la exactitus de nuestra neurona artificial. Mientras mas cerca del 0 quiere decir que nuestra neurona no sera tan precisa pero mientras mas cerca de 1 sera mejor.
+
+Total Epoch: Este valor corresponde a las Epocas que le tomo a nuestra neurona entrenare para poder lograr los resultados.
 ```
+Una vez entendido ello pasaremos a la pantalla de *Chart* en donde se nos va a generar nuestras graficas para ver como fue el entrenamiento de nuestra neurona:
 
-### Y las pruebas de estilo de codificación ⌨️
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Chart generated with training">
+</p>
 
-_Explica que verifican estas pruebas y por qué_
+Por ultimo se nos reprenta la pantalla de *Print* en donde seremos capaces de imprimir nuestros resultados ya sea en *CSV*, *JSON*, *TXT*.
 
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+<p align="center">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Chart generated with training">
+</p>
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+Las herramientas que se usaron para crear dicho proyecto fue:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* [Android Studio](https://developer.android.com/studio?hl=es-419&gclsrc=ds&gclsrc=ds) - El IDE utilizado
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+* **Iván Rivalcoba** - *Investigador y Educador profesional en TI* - [Jorge Ivan Rivalcoba Rivas](https://www.linkedin.com/in/jorge-ivan-rivalcoba-rivas-ab392532/)
+* **Jonatan Morales** - *Estudiante de Ingenieria En Tecnologias De Informacion Y Comunicaciones* - [Jonatan Arturo Morales Tavera](https://www.linkedin.com/in/jonatan-arturo-morales-tavera-3b825b240/)
 
 ## Licencia 📄
 
@@ -111,13 +144,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
 
