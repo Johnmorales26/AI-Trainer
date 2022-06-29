@@ -1,7 +1,7 @@
 # AI Trainer
 
-It is an application which proposes to implement AI algorithms for training artificial neurons from datasets in CSV format.
-The application is able to read these datasets and make the necessary adjustments to the linear regression neurons to generate an optimal training.
+Es una aplicación que propone implementar algoritmos de IA para entrenar neuronas artificiales a partir de conjuntos de datos en formato CSV.
+La aplicación es capaz de leer estos conjuntos de datos y realizar los ajustes necesarios en las neuronas de regresión lineal para generar un entrenamiento óptimo.
 
 <p align="center">
   <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/AITrainer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" width="350" title="Icon Aplication">
@@ -16,29 +16,32 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+Antes de iniciar a probar la aplicacion, debe instalar las herramientas necesarias para poder utiñizar el proyecto de Android en nuestro dispositivo de computo.
+#### Paso 1.
+Debemos instalar nuestra herramienta de desarrollo movil y en este casi vamos a usar Android Studio la cual es el IDE oficial para el desarrollo movil para la plataforma de Android.
+Dicha herramienta la vamos a poder encontrar dentro de la pagina oficial de <a href="https://developer.android.com/studio?hl=es-419&gclsrc=ds&gclsrc=ds">Android Studio</a>.
+#### Paso 2.
+Una vez instalada nuestra herramienta Android Studio debemos crear un emulador para poder previsualizar nuestra aplicacion en accion. Igual podemos utilizar un dispositivo fisico.
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Una vez descargado nuestra aplicacion del repositorio nos arrojara un archivo *.zip* dicho archivo podemos descomprimirlo con la herramienta <a href="https://www.winrar.es/descargas">WinRAR</a>.
 
-_Dí cómo será ese paso_
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h02_18.png" width = "250" title = "Downloaded File">
 
-```
-Da un ejemplo
-```
+Una vez descomprimido el archivo podemos abrirlo con nuestro IDE *Android Studio*.
+Una vez abierto nuestro IDE seleccionaremos el boton de *Open* para poder navegar en nuestros documentos y así encontrar el archivo.
 
-_Y repite_
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h06_07.png" width = "250" title = "Main screen of Android Studio IDE">
 
-```
-hasta finalizar
-```
+Una vez encontrado el archivo en nuestra computadora daremos clic en *Ok* para así de esta manera abra el IDE con nuestro proyecto.
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h08_29.png" width = "250" title = "Proyect Location">
+
+Una vez sincronizado nuestro proyecto debemos obtener esta pantalla:
+
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h11_07.png" width = "250" title = "Final Proyect Load">
+
 
 ## Ejecutando las pruebas ⚙️
 
