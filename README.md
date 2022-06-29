@@ -2,7 +2,10 @@
 
 It is an application which proposes to implement AI algorithms for training artificial neurons from datasets in CSV format.
 The application is able to read these datasets and make the necessary adjustments to the linear regression neurons to generate an optimal training.
-![alt text]([http://url/to/img.png](https://media.revistagq.com/photos/5f10224264f52a842c7f9e8b/master/pass/apps.39852.14455250034361967.824623c3-91b6-402f-9a68-c66bfac9bc20.jpg))
+
+<p align="center">
+  <img src="http://url/to/img.png](https://media.revistagq.com/photos/5f10224264f52a842c7f9e8b/master/pass/apps.39852.14455250034361967.824623c3-91b6-402f-9a68-c66bfac9bc20.jpg" width="350" title="hover text">
+</p>
 
 ## Comenzando 🚀
 
