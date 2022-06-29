@@ -4,7 +4,7 @@ It is an application which proposes to implement AI algorithms for training arti
 The application is able to read these datasets and make the necessary adjustments to the linear regression neurons to generate an optimal training.
 
 <p align="center">
-  <img src="http://url/to/img.png](https://media.revistagq.com/photos/5f10224264f52a842c7f9e8b/master/pass/apps.39852.14455250034361967.824623c3-91b6-402f-9a68-c66bfac9bc20.jpg" width="350" title="hover text">
+  <img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/AITrainer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" width="350" title="Icon Aplication">
 </p>
 
 ## Comenzando 🚀
