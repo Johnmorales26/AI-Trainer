@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AITrainer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!--    Shape   -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.aitrainer.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.aitrainer.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.aitrainer.LargeComponent</item>
+        <!--  Types  -->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.aitrainer.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.aitrainer.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.aitrainer.Headline4</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.aitrainer.Headline3</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.aitrainer.Headline2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.aitrainer.Headline1</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.aitrainer.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.aitrainer.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.aitrainer.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.aitrainer.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.aitrainer.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.aitrainer.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.aitrainer.Overline</item>
+    </style>
+
+    <style name="Theme.aitrainer.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">@dimen/border_cardview</item>
+        <item name="strokeColor">@color/primaryDarkColor</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:backgroundTint">@color/surface_dark</item>
+        <item name="android:layout_margin">@dimen/common_padding_min</item>
+    </style>
+
+    <style name="BackgroundActivities">
+        <item name="android:background">@color/background_dark</item>
+    </style>
+
+    <style name="BackgroundLine">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <!--  Search View -->
+    <style name="MaterialSearchViewStyle">
+        <item name="android:background">#424242</item>
+    </style>
+
+    <!--  Chip Styles  -->
+    <style name="ChipAppearace.aitrainer.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipIconTint">@color/primaryDarkColor</item>
+        <item name="chipBackgroundColor">@color/surface_dark</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="chipStrokeColor">@color/primaryColor</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="Theme.AITrainer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.AITrainer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

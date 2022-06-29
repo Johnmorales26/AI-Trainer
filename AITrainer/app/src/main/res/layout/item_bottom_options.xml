@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/cvContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    app:strokeColor="@color/secondaryColor"
+    app:strokeWidth="@dimen/border_cardview"
+    android:layout_marginVertical="@dimen/common_padding_min"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/common_padding_default">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:src="@drawable/ic_more"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/common_padding_default"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:layout_gravity="center"
+            tools:text="Option List"
+            style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

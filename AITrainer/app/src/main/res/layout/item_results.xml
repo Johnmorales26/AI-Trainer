@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/common_padding_min"
+    app:strokeColor="@color/secondaryColor"
+    app:strokeWidth="@dimen/border_cardview"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding_min">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            android:gravity="center"
+            tools:text="Number Iterations #1"
+            style="@style/TextAppearance.aitrainer.Headline5"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCosto"
+            style="@style/TextAppearance.aitrainer.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="@string/item_results_cost" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="@string/item_results_w"
+            style="@style/TextAppearance.aitrainer.Body1"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvJW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="@string/item_results_jw"
+            style="@style/TextAppearance.aitrainer.Body1"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDerivada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="@string/item_results_derivada"
+            style="@style/TextAppearance.aitrainer.Body1"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/common_padding_min"
+                android:text="Valores De Error"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+            <ImageButton
+                android:id="@+id/btnError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvError"
+                app:layout_constraintBottom_toBottomOf="@id/tvError"/>
+
+            <TableLayout
+                android:id="@+id/tlHeaderError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                app:layout_constraintTop_toBottomOf="@id/btnError"
+                app:layout_constraintBottom_toTopOf="@id/rvError">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Values Error"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:typeface="serif"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:listitem="@layout/item_error_guess"
+                app:layout_constraintTop_toBottomOf="@id/tlHeaderError"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvGuess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valores De Guess"
+                android:paddingVertical="@dimen/common_padding_min"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+            <ImageButton
+                android:id="@+id/btnGuess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvGuess"
+                app:layout_constraintBottom_toBottomOf="@id/tvGuess"/>
+
+            <TableLayout
+                android:id="@+id/tlHeaderGuess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/btnGuess"
+                app:layout_constraintBottom_toTopOf="@id/rvGuess">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:text="Values Guess"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:typeface="serif"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvGuess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:listitem="@layout/item_error_guess"
+                app:layout_constraintTop_toBottomOf="@id/tlHeaderGuess"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

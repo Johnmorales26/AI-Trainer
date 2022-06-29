@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/preferences_display_title">
+
+        <SwitchPreferenceCompat
+            app:title="@string/preference_enable_light_mode"
+            app:key="@string/key_preference_enable_light_mode"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            app:title="@string/preferences_application_languaje"
+            app:key="@string/key_preference_application_languaje"
+            app:entries="@array/languaje"
+            app:entryValues="@array/languaje_values"
+            app:defaultValue="@string/preference_languaje_english"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_ui_title">
+
+        <ListPreference
+            app:title="@string/preferences_application_color"
+            app:key="@string/key_preference_application_color"
+            app:entries="@array/themesColors"
+            app:entryValues="@array/themesColors_values"
+            app:defaultValue="@string/preference_color_red"/>
+
+        <ListPreference
+            app:title="@string/preferences_decimal_numbers"
+            app:key="@string/key_preference_decimal_numbers"
+            app:entries="@array/number_of_decimals"
+            app:entryValues="@array/number_of_decimals_values"
+            app:defaultValue="@string/preferences_two_decimals"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_sound_title">
+
+        <SwitchPreferenceCompat
+            app:title="@string/preference_enable_sound_active"
+            app:key="@string/key_preference_enable_sound_active"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            app:title="@string/preferences_application_sounds"
+            app:key="@string/key_preference_application_sound"
+            app:entries="@array/Sounds"
+            app:entryValues="@array/sounds_values"
+            app:defaultValue="@string/preference_sound_one"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_data_title">
+
+        <SwitchPreferenceCompat
+            app:title="@string/preference_enable_restore_data"
+            app:key="@string/key_preference_enable_restore_data"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

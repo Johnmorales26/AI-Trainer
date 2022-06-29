@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/title"
+            android:title="@string/lineal_regression_section">
+            <menu>
+                <item
+                    android:id="@+id/action_manual_regression"
+                    android:title="@string/manual_regression"/>
+                <item
+                    android:id="@+id/action_automatic_regresion"
+                    android:title="@string/automatic_regression"/>
+                <item
+                    android:id="@+id/action_vector_regresion"
+                    android:title="@string/vector_regression"/>
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="Mas">
+            <menu>
+                <item
+                    android:id="@+id/action_settings"
+                    android:title="Ajustes" />
+                <item
+                    android:id="@+id/item5"
+                    android:title="Acerca De" />
+
+            </menu>
+        </item>
+    </group>
+</menu>

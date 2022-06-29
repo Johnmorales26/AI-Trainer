@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Theme.aitrainer.CardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding_default">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            android:gravity="center"
+            tools:text="Number Iterations #1"
+            style="@style/TextAppearance.aitrainer.Headline6"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="w: 12.34"
+            style="@style/TextAppearance.aitrainer.Body1"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvJW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/common_padding_min"
+            tools:text="J(w): 34.45"
+            style="@style/TextAppearance.aitrainer.Body1"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

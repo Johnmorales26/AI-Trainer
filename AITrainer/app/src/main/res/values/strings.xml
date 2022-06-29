@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">AI Trainer</string>
+    <string name="lineal_regression_section">Lineal Regression</string>
+    <string name="manual_regression">Manual Regression</string>
+    <string name="automatic_regression">Automatic Regression</string>
+    <string name="menu_bottom_load_data">Dataset</string>
+    <string name="menu_bottom_operations">Operations</string>
+    <string name="menu_bottom_manual_results">Results</string>
+    <string name="menu_bottom_manual_print_data">Print</string>
+
+    <string name="menu_bottom_introduction">Introduction</string>
+    <string name="menu_bottom_dataset">Dataset</string>
+    <string name="menu_bottom_calculo_b_y_w">Calculation B and W</string>
+    <string name="menu_bottom_developer">Developer</string>
+
+    <string name="menu_toolbar_print_result">Print Results</string>
+    <string name="menu_toolbar_exit">Exit</string>
+
+    <string name="btn_cancelar">Cancel</string>
+    <string name="btn_exit">Exit</string>
+
+    <string name="bottom_sheet_title_exit">He wants to return?</string>
+
+    <string name="alert_required">Required</string>
+
+    <string name="item_results_cost">The Cost is: $%1$.2f</string>
+    <string name="item_results_jw">The value of J(w) is: $%1$.2f</string>
+    <string name="item_results_derivada">The value of the Derivative is: $%1$.2f</string>
+    <string name="item_results_w">The value of W is: $%1$.2f</string>
+
+    <string name="bottom_options_view_graphics">See Graphs</string>
+    <string name="bottom_options_view_progress">See Progress</string>
+    <string name="main_title_introductions">Introduction</string>
+    <string name="main_title_load_data">Charge Data</string>
+    <string name="main_title_calculates">Calculation</string>
+    <string name="main_title_calculates_automatic">Calculation Automatic</string>
+    <string name="main_title_developer">Developer</string>
+    <string name="main_developer_name">Morales Tavera Jonatan Arturo</string>
+    <string name="main_developer_dev">Android Developer</string>
+    <string name="main_developer_description">I\'m warmed of mobile technologies. Ideas maker, curious and sports lover</string>
+    <string name="introduction_descriptio_what_is_ia">AI is the technique of programming a computer to respond to data in the same way that an intelligent being does. It could be considered as a simulation of how an intelligent being reacts, processes and understands the data.</string>
+    <string name="introduction_descriptio_data">Data is the information sent, processed and analyzed by an AI system. The system then tries to discover the patterns or rules that govern the data.</string>
+    <string name="introduction_descriptio_training">An AI system is usually trained by feeding it lots of data and allowing it to discover patterns in the data. A trained model can use these rules to solve problems using data it hasn\'t seen before! For example, to train a machine to recognize shoes, thousands of images of different types of shoes would be used. The machine then learns to identify the "characteristics" common to the shoes and develops patterns or rules for recognizing the shoes.</string>
+    <string name="introduction_descriptio_overfitting">Overfitting is a common occurrence in machine learning. One of the reasons it happens is when an AI system is trained using partial or insufficient data. The system works fine when asked to solve problems using the \"training\" data, but not when exposed to previously unseen data. For example, while training a machine to recognize shoes, if you only train it using images of hiking boots, the machine will work fine if it is asked to recognize a hiking boot it hasn\'t seen before, but it may malfunction if asked. shows a high heel.</string>
+    <string name="introduction_descriptio_strores">Las imágenes se almacenan en una computadora como valores de píxeles. Una cuadrícula de números puede representar una imagen en escala de grises, donde cada celda de la cuadrícula representa un valor de píxel entre 0 y 255. Considere que una cuadrícula de 6x6 de valores de píxeles representa la siguiente imagen. Se pueden aplicar filtros a esta imagen para extraer líneas o bordes verticales.</string>
+    <string name="introduction_descriptio_filter">Filters are smaller grids of numbers (in this case, a 3x3 grid). A filter is applied sequentially to 3x3 sections of the image grid. When a filter is applied, each value in the image grid is multiplied by the corresponding value in the filter. The resulting nine values are added together, and the resulting sum is the final value of a pixel in the filtered image. In this particular case, the initial 6x6 image results in a smaller image. This specific filter helps extract vertical edges. Note that the filtered image is easier to work with as it is smaller but has not lost any essential features. On the other hand, certain features are enhanced and help to recognize the content of the image.</string>
+    <string name="menu_toolbar_dark_mode">Dark Mode</string>
+    <string name="menu_toolbar_light_mode">Light Mode</string>
+    <string name="onboarding_page_one">Info 1</string>
+    <string name="onboarding_page_two">Info 2</string>
+    <string name="onboarding_page_three">Info 3</string>
+    <string name="onboarding_page_four">Info 4</string>
+    <string name="onboarding_title_dataset">Dataset Information</string>
+    <string name="onboarding_title_operations">Operations Information</string>
+    <string name="onboarding_title_results">Results Information</string>
+    <string name="onboarding_title_graphics">Graphs Information</string>
+    <string name="onborarding_description_dataset">This part of the application will allow you to load a dataset from the device\'s memory of type SVG and will be able to read its data and load it into the application.</string>
+    <string name="onborarding_description_operations">The application will be able to perform each and every one of the operations based on the entered dataset, the entry of the variables, offering two ways to solve the training of the neuron.</string>
+    <string name="onborarding_description_results">The application is capable of calculating the results and is capable of capturing them and offers different ways of visualizing each and every one of the calculations made.</string>
+    <string name="onborarding_description_graphs">The application is capable of graphing the general result as well as being able to graph all the operations carried out within the same calculation.</string>
+    <string name="onboarding_button_previus">Previus</string>
+    <string name="onboarding_button_next">Next</string>
+    <string name="onboarding_button_start_application">Start Application</string>
+    <string name="btn_charge_data">Load Data</string>
+    <string name="my_text">Text to be sent</string>
+    <string name="msj_toast_proximamente">Coming soon!!</string>
+    <string name="toolbar_title">View Data</string>
+    <string name="title_fragment_data">Data</string>
+    <string name="title_fragment_graphics">Graphics</string>
+    <string name="dialog_print_name_file">Enter The Name Of The New File:</string>
+    <string name="name_file">File Name</string>
+    <string name="btn_save">Save</string>
+    <string name="bottom_fragment_title">More Options</string>
+    <string name="tv_insert_b">Enter The Value Of B:</string>
+    <string name="value_b">Value B</string>
+    <string name="tv_insert_w">Enter The Value Of W:</string>
+    <string name="value_w">Value W</string>
+    <string name="tv_selected_method">Select a Method:</string>
+    <string name="method_meta_error">Meta + Error Method</string>
+    <string name="method_iterations">Iterations Method</string>
+    <string name="tv_insert_iterations">Enter The Iterations:</string>
+    <string name="tv_no_iterations">No. Iterations</string>
+    <string name="tv_insert_range_max">Enter The Maximum Range:</string>
+    <string name="hint_range_max">Maximum Range</string>
+    <string name="tv_insert_range_min">Enter The Minimum Range:</string>
+    <string name="hint_range_min">Minimum Range</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="btn_more">More</string>
+    <string name="values_x">Values X</string>
+    <string name="values_y">Values Y</string>
+    <string name="tv_instructions_charge_data">You can move to the next window to enter B and W</string>
+    <string name="toast_dark_mode_actived">Dark Mode On</string>
+    <string name="toast_light_mode_actived">Light Mode On</string>
+
+    <string name="introduction_title_what_is_ia">What Is AI?</string>
+    <string name="introduction_title_data">Data</string>
+    <string name="introduction_title_training">Training</string>
+    <string name="introduction_title_overfitting">Overfitting</string>
+    <string name="introduction_title_stores">What Do You Store?</string>
+    <string name="introduction_title_filter">What Is A Filter?</string>
+
+    <string name="file_extension_csv">.csv</string>
+    <string name="bottom_option_title_extension">Select An Extension</string>
+    <string name="file_extension_json">.json</string>
+    <string name="file_extension_txt">.txt</string>
+
+    <string name="load_chart">Load Chart</string>
+    <string name="save_chart">Save Chart</string>
+    <string name="menu_bottom_calculo_automatic">Automatic Calculation</string>
+    <string name="tv_value_w0">Value W0:</string>
+    <string name="value_w0">W0</string>
+    <string name="tv_value_w1">Value W1:</string>
+    <string name="value_w1">W1</string>
+    <string name="tv_value_j">Value J:</string>
+    <string name="value_j">J</string>
+    <string name="tv_value_total_iterations">Total Epoch:</string>
+    <string name="value_iterations">Epoch</string>
+    <string name="btn_more_details">More Details</string>
+    <string name="value_converter">Value Converter</string>
+    <string name="hint_result">Result</string>
+    <string name="menu_toolbar_clear">Limpiar Variables</string>
+    <string name="automatic_method">Method:</string>
+    <string name="method_resulting_magnitude">Resulting Magnitude</string>
+    <string name="method_difference">Difference</string>
+    <string name="btn_view_results">Resultados</string>
+    <string name="settings_title">Configuration</string>
+
+    <string name="key_preference_enable_light_mode">pref_enable_light_theme</string>
+    <string name="key_preference_enable_languaje">pref_enable_languaje</string>
+    <string name="key_preference_enable_sound_active">pref_enable_sound_active</string>
+    <string name="key_preference_application_sound">pref_application_sound</string>
+
+    <string name="key_preference_enable_restore_data">pref_enable_restore_data</string>
+    <string name="key_preference_application_color">pref_ui_color</string>
+    <string name="key_preference_application_languaje">pref_ui_languaje</string>
+
+    <string name="preferences_data_title">Data</string>
+    <string name="preference_enable_restore_data">Restore Data And Settings</string>
+    <string name="preferences_sound_title">Sound</string>
+    <string name="preference_enable_sound_active">Sound Activated</string>
+    <string name="preference_enable_languaje">Engli</string>
+    <string name="preferences_display_title">Pantalla</string>
+    <string name="preference_enable_light_mode">Tema Claro</string>
+    <string name="preference_color_red">Rojo</string>
+    <string name="preference_color_yellow">Amarillo</string>
+    <string name="preference_color_blue">Azul</string>
+    <string name="preference_color_green">Verde</string>
+    <string name="preference_color_purple">Morado</string>
+    <string name="preference_color_orange">Naranja</string>
+
+    <string name="preference_key_color_red">pref_rojo</string>
+    <string name="preference_key_color_yellow">pref_amarillo</string>
+    <string name="preference_key_color_blue">pref_azul</string>
+    <string name="preference_key_color_green">pref_verde</string>
+    <string name="preference_key_color_purple">pref_morado</string>
+    <string name="preference_key_color_orange">pref_naranja</string>
+    <string name="preferences_ui_title">Interface</string>
+    <string name="preferences_application_color">App Color</string>
+    <string name="preferences_application_languaje">App Languaje</string>
+    <string name="preference_languaje_english">English</string>
+    <string name="preference_languaje_spanish">Spanish</string>
+    <string name="preference_key_languaje_english">pref_english</string>
+    <string name="preference_key_languaje_spanish">pref_spanish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_bottom_chart">Chart</string>
+    <string name="preferences_application_sounds">Select A Sound</string>
+
+    <string name="preference_sound_one">Sound One</string>
+    <string name="preference_sound_two">Sound Two</string>
+    <string name="preference_sound_three">Sound Three</string>
+    <string name="preference_sound_four">Sound Four</string>
+    <string name="preference_sound_five">Sound Five</string>
+    <string name="preference_sound_six">Sound Six</string>
+    <string name="preference_key_sound_one">pref_sound_one</string>
+    <string name="preference_key_sound_two">pref_sound_two</string>
+    <string name="preference_key_sound_three">pref_sound_three</string>
+    <string name="preference_key_sound_four">pref_sound_four</string>
+    <string name="preference_key_sound_five">pref_sound_five</string>
+    <string name="preference_key_sound_six">pref_sound_six</string>
+    <string name="btn_clear_data">Clear Data</string>
+    <string name="chart_no_exist_data">There are no data</string>
+    <string name="label_load">Loading…</string>
+    <string name="value_r">R</string>
+    <string name="tv_value_r">Value R:</string>
+    <string name="name_chart_j_epoch">J - Epoch</string>
+    <string name="vector_regression">Vectorial Regresion</string>
+    <string name="tv_value_ws">W values</string>
+
+    <string name="preferences_two_decimals">0.12</string>
+    <string name="preferences_four_decimals">0.1234</string>
+    <string name="preferences_six_decimals">0.123456</string>
+    <string name="preferences_eight_decimals">0.12345678</string>
+    <string name="preferences_key_two_decimals">pref_two_decimals</string>
+    <string name="preferences_key_four_decimals">pref_four_decimals</string>
+    <string name="preferences_key_six_decimals">pref_six_decimals</string>
+    <string name="preferences_key_eight_decimals">pref_eight_decimals</string>
+    <string name="preferences_decimal_numbers">Numero De Decimales</string>
+    <string name="key_preference_decimal_numbers">key_dc_num</string>
+    <string name="method">Method:</string>
+    <string name="method_umbral">Umbral Method</string>
+    <string name="method_equals">Equals Method</string>
+    <string name="value_umbral">Umbral</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#cc242c</color>
+    <color name="primaryLightColor">#ff5d56</color>
+    <color name="primaryDarkColor">#930004</color>
+
+    <color name="secondaryColor">#acacac</color>
+    <color name="secondaryLightColor">#dedede</color>
+    <color name="secondaryDarkColor">#7d7d7d</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="background">#f5f5f5</color>
+    <color name="surface">#ffffff</color>
+    <color name="error">#c51162</color>
+
+    <color name="background_dark">#1b1b1b</color>
+    <color name="surface_dark">#121212</color>
+    <color name="error_dark">#cf6679</color>
+
+    <color name="color1">#ee1250</color>
+    <color name="color2">#3c8ced</color>
+    <color name="color3">#33ee12</color>
+    <color name="color4">#ee7c12</color>
+    <color name="color5">#f42683</color>
+
+    <color name="line_chart_color_1">#383838</color>
+</resources>

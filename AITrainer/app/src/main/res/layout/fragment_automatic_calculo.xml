@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".regresion_automatic.AutomaticCalculoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_default">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDivider1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Operaciones"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                app:layout_constraintTop_toTopOf="@id/tvDivider1"
+                app:layout_constraintBottom_toBottomOf="@id/tvDivider1"
+                app:layout_constraintStart_toEndOf="@id/tvDivider1"
+                app:layout_constraintEnd_toStartOf="@id/btnDividerOp"/>
+
+            <ImageView
+                android:id="@+id/btnDividerOp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_up"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUmbral"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:hint="@string/value_umbral"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUmbral"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:enabled="false"
+                    android:layout_marginHorizontal="@dimen/common_padding_min"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:icon="@drawable/ic_calculate"
+                    app:iconGravity="start"
+                    android:text="@string/btn_calculate"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvInputData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndValueB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_w0"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueW0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_w0"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueW0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_w1"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilValueW1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_w1"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueW1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_j"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_j"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueJ"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_r"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_r"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_total_iterations"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueIterations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_iterations"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueIterations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/common_padding_min"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:icon="@drawable/ic_view_list"
+            app:iconGravity="start"
+            android:text="@string/btn_view_results"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_default">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDivider2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pruebas"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                app:layout_constraintTop_toTopOf="@id/tvDivider2"
+                app:layout_constraintBottom_toBottomOf="@id/tvDivider2"
+                app:layout_constraintStart_toEndOf="@id/tvDivider2"
+                app:layout_constraintEnd_toStartOf="@id/btnDividerTest"/>
+
+            <ImageView
+                android:id="@+id/btnDividerTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            android:visibility="gone"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor A Convertir:"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueTransform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_converter"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueTransform"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resultado:"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_result"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_default">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDivider3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Resultados"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                app:layout_constraintTop_toTopOf="@id/tvDivider3"
+                app:layout_constraintBottom_toBottomOf="@id/tvDivider3"
+                app:layout_constraintStart_toEndOf="@id/tvDivider3"
+                app:layout_constraintEnd_toStartOf="@id/btnDividerRes"/>
+
+            <ImageView
+                android:id="@+id/btnDividerRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:listitem="@layout/item_automatic_results"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

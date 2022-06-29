@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Theme.aitrainer.CardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvIterations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Iteration #1"
+                android:gravity="center"
+                android:layout_marginVertical="@dimen/common_padding_min"
+                style="@style/TextAppearance.aitrainer.Headline5"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvW0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="W0: 32.002106"
+                android:layout_marginVertical="@dimen/common_padding_nano"
+                style="@style/TextAppearance.aitrainer.Body1"
+                app:layout_constraintTop_toBottomOf="@id/tvIterations"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvW1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="W1: 1.7998817"
+                android:layout_marginVertical="@dimen/common_padding_nano"
+                style="@style/TextAppearance.aitrainer.Body1"
+                app:layout_constraintTop_toBottomOf="@id/tvW0"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="J: 1.215064E-6"
+                android:layout_marginVertical="@dimen/common_padding_nano"
+                style="@style/TextAppearance.aitrainer.Body1"
+                app:layout_constraintTop_toBottomOf="@id/tvW1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="R: 1.215064E-6"
+                android:layout_marginVertical="@dimen/common_padding_nano"
+                style="@style/TextAppearance.aitrainer.Body1"
+                app:layout_constraintTop_toBottomOf="@id/tvJ"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_charge_data"
+        android:icon="@drawable/ic_dataset"
+        android:title="@string/menu_bottom_load_data"/>
+
+    <item
+        android:id="@+id/action_manual_operations"
+        android:icon="@drawable/ic_calculate"
+        android:title="@string/menu_bottom_operations"/>
+
+    <item
+        android:id="@+id/action_manual_chart"
+        android:icon="@drawable/ic_auto_graph"
+        android:title="@string/menu_bottom_chart"/>
+
+    <item
+        android:id="@+id/action_manual_print_data"
+        android:icon="@drawable/ic_print"
+        android:title="@string/menu_bottom_manual_print_data"/>
+
+</menu>

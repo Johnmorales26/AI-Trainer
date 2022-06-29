@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvValueX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Values X"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textSize="@dimen/common_padding_default"
+            android:gravity="center_horizontal"
+            android:layout_span="6"
+            style="@style/TextAppearance.aitrainer.Subtitle2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvValueY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Values Y"
+            android:padding="3dp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textSize="@dimen/common_padding_default"
+            android:gravity="center_horizontal"
+            android:layout_span="6"
+            style="@style/TextAppearance.aitrainer.Subtitle2"/>
+
+    </TableRow>
+
+</TableLayout>

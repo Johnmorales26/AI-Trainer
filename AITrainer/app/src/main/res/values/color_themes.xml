@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="themesColors">
+
+        <item>@string/preference_color_red</item>
+        <item>@string/preference_color_yellow</item>
+        <item>@string/preference_color_blue</item>
+        <item>@string/preference_color_green</item>
+        <item>@string/preference_color_purple</item>
+        <item>@string/preference_color_orange</item>
+
+    </string-array>
+
+    <string-array name="themesColors_values">
+
+        <item>@string/preference_key_color_red</item>
+        <item>@string/preference_key_color_yellow</item>
+        <item>@string/preference_key_color_blue</item>
+        <item>@string/preference_key_color_green</item>
+        <item>@string/preference_key_color_purple</item>
+        <item>@string/preference_key_color_orange</item>
+
+    </string-array>
+
+    <string-array name="languaje">
+
+        <item>@string/preference_languaje_english</item>
+        <item>@string/preference_languaje_spanish</item>
+
+    </string-array>
+
+    <string-array name="languaje_values">
+
+        <item>@string/preference_key_languaje_english</item>
+        <item>@string/preference_key_languaje_spanish</item>
+
+    </string-array>
+
+    <string-array name="Sounds">
+
+        <item>@string/preference_sound_one</item>
+        <item>@string/preference_sound_two</item>
+        <item>@string/preference_sound_three</item>
+        <item>@string/preference_sound_four</item>
+        <item>@string/preference_sound_five</item>
+        <item>@string/preference_sound_six</item>
+
+    </string-array>
+
+    <string-array name="sounds_values">
+        <item>@string/preference_key_sound_one</item>
+        <item>@string/preference_key_sound_two</item>
+        <item>@string/preference_key_sound_three</item>
+        <item>@string/preference_key_sound_four</item>
+        <item>@string/preference_key_sound_five</item>
+        <item>@string/preference_key_sound_six</item>
+
+    </string-array>
+
+    <string-array name="number_of_decimals">
+        <item>@string/preferences_two_decimals</item>
+        <item>@string/preferences_four_decimals</item>
+        <item>@string/preferences_six_decimals</item>
+        <item>@string/preferences_eight_decimals</item>
+    </string-array>
+
+    <string-array name="number_of_decimals_values">
+        <item>@string/preferences_key_two_decimals</item>
+        <item>@string/preferences_key_four_decimals</item>
+        <item>@string/preferences_key_six_decimals</item>
+        <item>@string/preferences_key_eight_decimals</item>
+    </string-array>
+
+    <string-array name="methods_values">
+        <item>@string/method_umbral</item>
+        <item>@string/method_equals</item>
+    </string-array>
+
+</resources>
