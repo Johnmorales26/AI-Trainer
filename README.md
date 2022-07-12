@@ -50,26 +50,26 @@ Para generar las pruebas de nuestra aplicación es necesario instalar unos datas
 Lo que haremos es pasar esos archivos a nuestro escritorio de la computadora y arrastrarlos el emulador.
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Passing dataset to emulator">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "250" title = "Passing dataset to emulator">
 </p>
 
 Para poder correr la aplicación presionaremos la combinación de teclas *Shift + F10* para compilar la aplicacion y instalarla ya sea en nuestro emulador o dispositivo fisico.
 Una vez acabada la compilacion nos mostrara una pantalla la siguiente pantalla:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Main screen to AI Trainer">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h27_53.png" width = "250" title = "Main screen to AI Trainer">
 </p>
 
 Daremos clic en la esquina superor izquierda para activar el menu desplegable y así poder previsualizar nuestras opciones que tenemos:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "AI Trainer Dropdown Menu">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h30_17.png" width = "250" title = "AI Trainer Dropdown Menu">
 </p>
 
 Seleccionaremos la segunda opcion de *Automatic Regression* y nos mostrara la siguiente pantalla:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "AI Trainer Automatic Regression Pages">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h33_07.png" width = "250" title = "AI Trainer Automatic Regression Pages">
 </p>
 
 ### Analice las pruebas end-to-end 🔩
@@ -80,25 +80,25 @@ Cargaremos nuestro dataset dando clic en el boton de *Load Data* y procederemos 
 Usaremos el dataset de *Datos Sinteticos*
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Load dataset Datos Sinteticos">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h36_59.png" width = "250" title = "Load dataset Datos Sinteticos">
 </p>
 
 Una vez cargado el dataset previsualizaremos los datos de esta manera:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Data Previsualization">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h37_10.png" width = "250" title = "Data Previsualization">
 </p>
 
 Ahora pasaremos a la pantalla de *Operations* en dicha pantalla añadiremos un *Umbral* con un valor de *0.001* el cual nos ayudara a darle mas precision al entrenamiento de nuestra neurona:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Umbral Value">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h41_03.png" width = "250" title = "Umbral Value">
 </p>
 
 Una vez añadido el Umbral daremos clic en *Calculate* y esperaremos a que arroje los resultados como estos:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Umbral Value">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h45_40.png" width = "250" title = "Umbral Value">
 </p>
 
 Una vez obtenidos los resultados podemos observar ciertos apartados que son los siguientes:
@@ -117,13 +117,13 @@ Total Epoch: Este valor corresponde a las Epocas que le tomo a nuestra neurona e
 Una vez entendido ello pasaremos a la pantalla de *Chart* en donde se nos va a generar nuestras graficas para ver como fue el entrenamiento de nuestra neurona:
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Chart generated with training">
+<img src="[https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h45_40.png" width = "250" title = "Chart generated with training](https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h51_20.png)">
 </p>
 
 Por ultimo se nos reprenta la pantalla de *Print* en donde seremos capaces de imprimir nuestros resultados ya sea en *CSV*, *JSON*, *TXT*.
 
 <p align="center">
-<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h22_57.png" width = "450" title = "Chart generated with training">
+<img src="https://github.com/Johnmorales26/johnmorales26.aitrainer.github.com/blob/main/src/2022-06-29_16h51_32.png" width = "250" title = "Chart generated with training">
 </p>
 
 ## Construido con 🛠️
