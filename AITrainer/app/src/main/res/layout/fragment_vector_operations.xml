@@ -174,6 +174,69 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor A Convertir:"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueTransform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_converter"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueTransform"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resultado:"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_result"
+                    android:enabled="false"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

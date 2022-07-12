@@ -32,7 +32,7 @@ class NeuronTraining {
         return errorC
     }
 
-    fun resolveW(w: Double, result: Double): Double = (w - (alpha * result)).toDouble()
+    fun resolveW(w: Double, result: Double): Double = (w - (alpha * result))
 
     fun resolveDerivative(w: Double, b: Double, valuesX: MutableList<Double>, valuesY: MutableList<Double>): Double{
         var countResult = 0.0

@@ -33,6 +33,7 @@ class VectorOperationsFragment : Fragment() {
     private var printData: MutableList<PrintDataVectores> = mutableListOf()
     private lateinit var adapter: PrintDataVectoresAdapter
     lateinit var sharedPreferences: SharedPreferences
+    private lateinit var listW: MutableList<Double>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,6 +48,30 @@ class VectorOperationsFragment : Fragment() {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
         configureUmbral()
         configureButtons()
+        configureAnswers()
+    }
+
+    private fun configureAnswers() {
+        binding.etValueTransform.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                val text = binding.etValueTransform.text.toString().trim()
+                val valueTransform: Double
+                if (text.isNotEmpty()){
+                    valueTransform = binding.etValueTransform.text.toString().trim().toDouble()
+                    val valueW0 = listW[0]
+                    var index = 1
+                    var result = 0.0
+                    while (index < listW.size) {
+                        result += valueTransform * listW[index]
+                        index++
+                    }
+                    result += valueW0
+                    binding.etValueResult.text = result.toString().trim().editable()
+                }
+            }
+            override fun afterTextChanged(p0: Editable?) {}
+        })
     }
 
     private fun configureUmbral() {
@@ -94,22 +119,24 @@ class VectorOperationsFragment : Fragment() {
         var index = 0
         var magnitude: Double
         val operationsWithArrays = OperationsWithArrays()
-        println("Array X --> \n${operationsWithArrays.printArray(arrayX)}")
-        println("Array Y --> \n${operationsWithArrays.printArray(arrayY)}")
-        println("Array W --> \n${operationsWithArrays.printArray(arrayW)}")
+        listW = mutableListOf()
+        //println("Array X --> \n${operationsWithArrays.printArray(arrayX)}")
+        //println("Array Y --> \n${operationsWithArrays.printArray(arrayY)}")
+        //println("Array W --> \n${operationsWithArrays.printArray(arrayW)}")
         chartVectorData = mutableListOf()
+        val time = System.currentTimeMillis()
         do {
             //  Paso 0 -------------------------------------------------------------------------
             titleSteps("Paso 0")
-            println("Matriz A " + arrayX.size + "x"+ arrayX[0].size)
-            println(operationsWithArrays.printArray(arrayX))
-            println("Matriz B " + arrayW.size + "x"+ arrayW[0].size)
-            println(operationsWithArrays.printArray(arrayW))
+            //println("Matriz A " + arrayX.size + "x"+ arrayX[0].size)
+            //println(operationsWithArrays.printArray(arrayX))
+            //println("Matriz B " + arrayW.size + "x"+ arrayW[0].size)
+            //println(operationsWithArrays.printArray(arrayW))
             //  Paso 1 -------------------------------------------------------------------------
             titleSteps("Paso 1")
             val arrayRes = operationsWithArrays.crossProductArray(arrayX, arrayW)
-            println("Matriz A " + arrayRes.size + "x"+ arrayRes[0].size)
-            println(operationsWithArrays.printArray(arrayRes))
+            //println("Matriz A " + arrayRes.size + "x"+ arrayRes[0].size)
+            //println(operationsWithArrays.printArray(arrayRes))
             //  Calculate R
             var average = 0.0
             var indexR = 0
@@ -124,43 +151,54 @@ class VectorOperationsFragment : Fragment() {
             //  Paso 2 -------------------------------------------------------------------------
             titleSteps("Paso 2")
             val resSubtract = operationsWithArrays.subtractArray(arrayRes, arrayY)
-            println(operationsWithArrays.printArray(resSubtract))
+            //println(operationsWithArrays.printArray(resSubtract))
             //  Paso 3 -------------------------------------------------------------------------
             titleSteps("Paso 3")
             val transposeArray = operationsWithArrays.transposeArray(arrayX)
-            println(operationsWithArrays.printArray(transposeArray))
+            //println(operationsWithArrays.printArray(transposeArray))
             //  Paso 4 -------------------------------------------------------------------------
             titleSteps("Paso 4")
             val stepFour = operationsWithArrays.crossProductArray(transposeArray, resSubtract)
-            println(operationsWithArrays.printArray(stepFour))
+            //println(operationsWithArrays.printArray(stepFour))
             //  Paso 5 -------------------------------------------------------------------------
             titleSteps("Paso 5")
             val j = (1 / arrayX.size.toString().toDouble())
             val multiValue = alpha * (j)
             val stepFive = operationsWithArrays.multiValueArray(multiValue, stepFour)
-            println(operationsWithArrays.printArray(stepFive))
+            //println(operationsWithArrays.printArray(stepFive))
             //  Paso 6 -------------------------------------------------------------------------
             titleSteps("Paso 6 - Resultado De Una Epoca")
             arrayUpdateW = operationsWithArrays.subtractArray(arrayW, stepFive)
-            println(operationsWithArrays.printArray(arrayUpdateW))
+            //println(operationsWithArrays.printArray(arrayUpdateW))
             //  Paso 7 -------------------------------------------------------------------------
             titleSteps("Paso 7")
             val newJ = operationsWithArrays.getJ(arrayX, arrayY, arrayW)
-            println(operationsWithArrays.printArray(newJ))
+            //println(operationsWithArrays.printArray(newJ))
             newJ.forEach {
                 valueJ = it[0]
             }
             arrayW = arrayUpdateW
-            println("---------- Iteration $index ----------")
-            val getStop = operationsWithArrays.crossProductArray(operationsWithArrays.transposeArray(arrayX), operationsWithArrays.subtractArray(operationsWithArrays.crossProductArray(arrayX, arrayW), arrayY))
-            println(operationsWithArrays.printArray(getStop))
+            listW = mutableListOf()
+            arrayUpdateW.forEach {
+                it.forEach { value ->
+                    listW.add(value.toString().trim().toDouble())
+                }
+            }
+            //println("---------- Iteration $index ----------")
+            val getStop = operationsWithArrays.crossProductArray(operationsWithArrays.transposeArray(arrayX),
+                operationsWithArrays.subtractArray(operationsWithArrays.crossProductArray(arrayX, arrayW), arrayY))
+            //println(operationsWithArrays.printArray(getStop))
             magnitude = operationsWithArrays.getMagnitude(getStop)
-            println("Magnitude --> $magnitude")
+            println("Epoca --> $index")
+            println("$umbral --> $magnitude")
+            println("Value R^2 --> $valueR")
+            println("Value J --> $valueJ")
             //  Index, Ws, J, R2
             printData.add(PrintDataVectores(index, valueJ, valueR))
             chartVectorData.add(ChartVectorData(index, valueJ, arrayW))
             index++
         } while (umbral!! < magnitude)
+        println("Transcurred Time --> ${System.currentTimeMillis() - time}")
         return@withContext arrayUpdateW
     }
 
@@ -170,6 +208,8 @@ class VectorOperationsFragment : Fragment() {
             getString(R.string.preferences_two_decimals))
         val index = printData.size - 1
         with(binding) {
+            tilValueTransform.isEnabled = true
+            tilValueResult.isEnabled = true
             tvTitleWs.visibility = VISIBLE
             updateRecyclerView(type, arrayUpdateW)
             etValueJ.isEnabled = true

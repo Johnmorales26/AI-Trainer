@@ -129,7 +129,11 @@ class VectorDatasetsFragment : Fragment() {
                     val lineDataset: MutableList<Double> = mutableListOf()
                     val textElements = line.toString().split(",")
                     textElements.forEach {
-                        lineDataset.add(it.trim().toDouble())
+                        if (it == "") {
+                            println("La linea con este valor no se agrega = $it")
+                        } else {
+                            lineDataset.add(it.trim().toDouble())
+                        }
                     }
                     listMultiLines.add(lineDataset)
                     i++
