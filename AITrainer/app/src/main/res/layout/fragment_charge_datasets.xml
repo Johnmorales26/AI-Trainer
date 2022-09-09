@@ -1,121 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".common.ChargeDatasetsFragment">
+    tools:context=".Iterations.IterationsChargeDataModule.view.ChargeDatasetsFragment">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardViewOne"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        style="@style/Theme.aitrainer.CardView">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewOne"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/common_padding_default">
-
-            <ImageView
-                android:id="@+id/imgCharge"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@drawable/img_load_data"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/btnChargeData"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnChargeData"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_charge_data"
-                android:layout_margin="@dimen/common_padding_min"
-                app:layout_constraintTop_toBottomOf="@id/imgCharge"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/btnClearData"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnClearData"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_clear_data"
-                android:layout_margin="@dimen/common_padding_min"
-                app:layout_constraintTop_toBottomOf="@id/imgCharge"
-                app:layout_constraintStart_toEndOf="@id/btnChargeData"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/Theme.aitrainer.CardView">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/clData"
-                android:visibility="gone"
-                tools:visibility="visible"
-                android:paddingTop="@dimen/common_padding_min"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/btnChargeData"
-                app:layout_constraintBottom_toBottomOf="parent">
+                android:layout_height="match_parent"
+                android:padding="@dimen/common_padding_default">
 
-                <TableLayout
-                    android:id="@+id/llHeader"
+                <ImageView
+                    android:id="@+id/imgCharge"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:shrinkColumns="*"
-                    android:stretchColumns="*"
+                    android:layout_height="300dp"
+                    android:src="@drawable/img_load_data"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/rvChargeData">
+                    app:layout_constraintBottom_toTopOf="@id/btnChargeData"/>
 
-                    <TableRow
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChargeData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_charge_data"
+                    android:layout_margin="@dimen/common_padding_min"
+                    app:layout_constraintTop_toBottomOf="@id/imgCharge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnClearData"/>
 
-                        <com.google.android.material.textview.MaterialTextView
-                            android:text="@string/values_x"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:typeface="serif"
-                            style="@style/TextAppearance.aitrainer.Subtitle1"/>
-                        <com.google.android.material.textview.MaterialTextView
-                            android:text="@string/values_y"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:typeface="serif"
-                            style="@style/TextAppearance.aitrainer.Subtitle1"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnClearData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_clear_data"
+                    android:layout_margin="@dimen/common_padding_min"
+                    app:layout_constraintTop_toBottomOf="@id/imgCharge"
+                    app:layout_constraintStart_toEndOf="@id/btnChargeData"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
-                    </TableRow>
-
-                </TableLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvChargeData"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clData"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:paddingTop="@dimen/common_padding_min"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_table_data_x_y"
-                    app:layout_constraintTop_toBottomOf="@id/llHeader"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/btnChargeData"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <TableLayout
+                        android:id="@+id/llHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/rvChargeData">
+
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:text="@string/values_x"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:text="@string/values_y"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvChargeData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_table_data_x_y"
+                        app:layout_constraintTop_toBottomOf="@id/llHeader"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/tv_instructions_charge_data"
+            app:layout_constraintTop_toBottomOf="@id/cardViewOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tvAnnouncement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:visibility="gone"
-        android:text="@string/tv_instructions_charge_data"
-        app:layout_constraintTop_toBottomOf="@id/cardViewOne"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

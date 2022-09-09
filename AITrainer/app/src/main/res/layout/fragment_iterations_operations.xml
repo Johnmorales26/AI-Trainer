@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Iterations.IterationsMethodModule.view.IterationsOperationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvInputData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_min"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndValueB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_b"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_b"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndValueW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_w"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilValueW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/value_w"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    android:layout_marginBottom="@dimen/common_padding_min"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValueW"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvIterations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_padding_min"
+            tools:visibility="visible"
+            style="@style/Theme.aitrainer.CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_default">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvIndIterations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_insert_iterations"
+                    android:padding="@dimen/common_padding_min"
+                    style="@style/TextAppearance.aitrainer.Subtitle1"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilIterations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_no_iterations"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etIterations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned|numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                app:icon="@drawable/ic_calculate"
+                app:iconGravity="start"
+                android:text="@string/btn_calculate"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
+                android:enabled="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:icon="@drawable/ic_view_list"
+                app:iconGravity="start"
+                android:text="@string/btn_view_results"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_results"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

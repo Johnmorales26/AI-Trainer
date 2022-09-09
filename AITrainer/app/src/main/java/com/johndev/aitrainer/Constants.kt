@@ -8,4 +8,6 @@ object Constants {
     const val VISIBLE_VIEW = "Visible"
     const val NOT_VISIBLE_VIEW = "NOT Visible"
 
+    const val SEPARATOR_CSV = ","
+
 }

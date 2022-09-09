@@ -201,4 +201,7 @@
     <string name="method_umbral">Umbral Method</string>
     <string name="method_equals">Equals Method</string>
     <string name="value_umbral">Umbral</string>
+    <string name="lineal_regresion_manual">Manual Lineal Regression</string>
+    <string name="lineal_regression_automatic">Automatic Lineal Regresion</string>
+    <string name="lineal_regression_verctorized">Vectorized Linear Regression</string>
 </resources>

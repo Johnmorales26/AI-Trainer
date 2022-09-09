@@ -9,8 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.johndev.aitrainer.Adapters.IntroductionCardsAdapter
 import com.johndev.aitrainer.Interfaces.OnIntroductionListener
-import com.johndev.aitrainer.Models.Introduction
-import com.johndev.aitrainer.databinding.FragmentAutomaticCalculoBinding
+import com.johndev.aitrainer.common.entities.Introduction
 import com.johndev.aitrainer.databinding.FragmentIntroductionBinding
 
 

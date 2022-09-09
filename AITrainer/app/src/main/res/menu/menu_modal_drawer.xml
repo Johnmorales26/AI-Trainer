@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group
+        android:id="@+id/group0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/title_lineal_regresion_manual"
+            android:title="@string/lineal_regresion_manual">
+            <menu>
+                <item
+                    android:id="@+id/action_manual_regression_iterations"
+                    android:title="@string/method_iterations"/>
+                <item
+                    android:id="@+id/action_automatic_regresion_ranges"
+                    android:title="@string/method_meta_error"/>
+            </menu>
+        </item>
+    </group>
+    <group
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/title"
-            android:title="@string/lineal_regression_section">
+            android:id="@+id/titleAutomatic"
+            android:title="@string/lineal_regression_automatic">
             <menu>
-                <item
-                    android:id="@+id/action_manual_regression"
-                    android:title="@string/manual_regression"/>
                 <item
                     android:id="@+id/action_automatic_regresion"
                     android:title="@string/automatic_regression"/>
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/title"
+            android:title="@string/lineal_regression_verctorized">
+            <menu>
                 <item
                     android:id="@+id/action_vector_regresion"
                     android:title="@string/vector_regression"/>
@@ -20,7 +43,7 @@
         </item>
     </group>
     <group
-        android:id="@+id/group2"
+        android:id="@+id/group3"
         android:checkableBehavior="single">
         <item
             android:id="@+id/subtitle"

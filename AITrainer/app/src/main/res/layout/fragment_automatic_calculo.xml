@@ -4,46 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".regresion_automatic.AutomaticCalculoFragment">
+    tools:context=".Automatic.AutomaticCalculoModule.view.AutomaticCalculoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/common_padding_default">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tvDivider1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Operaciones"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                style="@style/TextAppearance.aitrainer.Subtitle1"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:background="#000"
-                android:layout_marginHorizontal="@dimen/common_padding_min"
-                app:layout_constraintTop_toTopOf="@id/tvDivider1"
-                app:layout_constraintBottom_toBottomOf="@id/tvDivider1"
-                app:layout_constraintStart_toEndOf="@id/tvDivider1"
-                app:layout_constraintEnd_toStartOf="@id/btnDividerOp"/>
-
-            <ImageView
-                android:id="@+id/btnDividerOp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_drop_up"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -79,7 +45,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:enabled="false"
                     android:layout_marginHorizontal="@dimen/common_padding_min"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -227,52 +192,6 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/common_padding_min"
-            android:enabled="false"
-            android:layout_gravity="center"
-            android:gravity="center"
-            app:icon="@drawable/ic_view_list"
-            app:iconGravity="start"
-            android:text="@string/btn_view_results"/>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/common_padding_default">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tvDivider2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Pruebas"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                style="@style/TextAppearance.aitrainer.Subtitle1"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:background="#000"
-                android:layout_marginHorizontal="@dimen/common_padding_min"
-                app:layout_constraintTop_toTopOf="@id/tvDivider2"
-                app:layout_constraintBottom_toBottomOf="@id/tvDivider2"
-                app:layout_constraintStart_toEndOf="@id/tvDivider2"
-                app:layout_constraintEnd_toStartOf="@id/btnDividerTest"/>
-
-            <ImageView
-                android:id="@+id/btnDividerTest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_drop_down"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardViewTest"
             android:layout_width="match_parent"
@@ -337,45 +256,10 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/common_padding_default">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tvDivider3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Resultados"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                style="@style/TextAppearance.aitrainer.Subtitle1"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:background="#000"
-                android:layout_marginHorizontal="@dimen/common_padding_min"
-                app:layout_constraintTop_toTopOf="@id/tvDivider3"
-                app:layout_constraintBottom_toBottomOf="@id/tvDivider3"
-                app:layout_constraintStart_toEndOf="@id/tvDivider3"
-                app:layout_constraintEnd_toStartOf="@id/btnDividerRes"/>
-
-            <ImageView
-                android:id="@+id/btnDividerRes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_drop_down"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             tools:listitem="@layout/item_automatic_results"/>
 
     </LinearLayout>

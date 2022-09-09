@@ -14,6 +14,18 @@
         android:theme="@style/Theme.AITrainer"
         tools:targetApi="31">
         <activity
+            android:name=".Vectors.VectorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Automatic.AutomaticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ranges.RangesMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Iterations.IterationsMethodActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExtraFragments.SettingsActivity"
             android:exported="false" />
         <activity

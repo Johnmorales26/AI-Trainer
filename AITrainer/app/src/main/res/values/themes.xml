@@ -37,7 +37,8 @@
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:backgroundTint">@color/surface</item>
-        <item name="android:layout_margin">@dimen/common_padding_min</item>
+        <item name="android:layout_marginTop">@dimen/common_padding_min</item>
+        <item name="android:layout_marginBottom">@dimen/common_padding_min</item>
     </style>
 
     <!--  Chip Styles  -->
