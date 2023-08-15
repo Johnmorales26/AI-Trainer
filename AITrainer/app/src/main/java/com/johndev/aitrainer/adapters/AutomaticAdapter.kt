@@ -6,18 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.johndev.aitrainer.Interfaces.OnChargeData
 import com.johndev.aitrainer.Models.Automatic
-import com.johndev.aitrainer.Models.ChargeData
-import com.johndev.aitrainer.Models.ResultsPerceptron
 import com.johndev.aitrainer.R
 import com.johndev.aitrainer.databinding.ItemAutomaticResultsBinding
-import com.johndev.aitrainer.databinding.ItemProgressDataBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.util.stream.Collectors
 
-class AutomaticAdapter(private val dataList: MutableList<Automatic>):
+class AutomaticAdapter(private val dataList: MutableList<com.johndev.aitrainer.common.entities.Automatic>):
     RecyclerView.Adapter<AutomaticAdapter.ViewHolder>() {
 
     lateinit var context: Context

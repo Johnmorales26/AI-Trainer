@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AI Trainer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_manual_regression">Manual Regression</string>
+    <string name="menu_regression">Regression</string>
+    <string name="menu_vector_regression">Vector Regression</string>
+
+    <string name="menu_manual_regression_description">This Artificial Neuron model trains a neuron based on iterations or ranges of values.</string>
+    <string name="menu_regression_description">This Artificial Neuron model trains a neuron to make predictions.</string>
+    <string name="menu_vector_regression_description">This model of an Artificial Neuron trains a neuron using multiple data inputs to enable more intricate predictions.</string>
+    <string name="menu_home">Home</string>
+    <string name="title_data_upload">Data upload</string>
+    <string name="title_training">Training</string>
+    <string name="title_chart">Chart</string>
+    <string name="title_print">Print</string>
+
+</resources>

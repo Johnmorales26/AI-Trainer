@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.johndev.aitrainer.ui.homeModule.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_navigation_manual_regression"
+            app:destination="@id/navigation_manual_regression"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_home_to_navigation_regression"
+            app:destination="@id/navigation_regression"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_home_to_navigation_vector_regression"
+            app:destination="@id/navigation_vector_regression"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manual_regression"
+        android:name="com.johndev.aitrainer.ui.manualRegressionModule.ui.ManualRegressionFragment"
+        android:label="@string/menu_manual_regression"
+        tools:layout="@layout/fragment_manual_regression">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_regression"
+        android:name="com.johndev.aitrainer.ui.regressionModule.RegressionFragment"
+        android:label="@string/menu_regression"
+        tools:layout="@layout/fragment_regression">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_vector_regression"
+        android:name="com.johndev.aitrainer.ui.vectorRegressionModule.VectorRegressionFragment"
+        android:label="@string/menu_vector_regression"
+        tools:layout="@layout/fragment_vector_regression">
+    </fragment>
+
+</navigation>
